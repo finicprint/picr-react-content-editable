@@ -1,6 +1,8 @@
 # Picr react content editable
 A simple implementation of content editable that autosizes input/textarea with minimum Javascript.
 
+## Installation
+`npm install picr-react-content-editable`
 
 ## The idea
 The idea is pretty simple. Input field/textarea renders as absolute positioned element in a wrapper with height and width set to 100%. Input/Textarea value renders in the wrapper with transparent color that makes the text invisible and stretches the wrapper.
