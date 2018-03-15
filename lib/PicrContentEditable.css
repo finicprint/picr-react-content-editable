@@ -1,0 +1,34 @@
+/*  imported from PicrContentEditable.css  */
+
+.PicrContentEditable__container--32j {
+  position: relative;
+  white-space: pre-wrap;
+  display: inline-block;
+}
+
+.PicrContentEditable__container--32j span {
+  color: transparent;
+  user-select: none;
+}
+
+.PicrContentEditable__field--3Td {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  background: transparent;
+  color: inherit;
+
+  padding: inherit;
+  border: inherit !important;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none
+}

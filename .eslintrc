@@ -1,0 +1,67 @@
+extends:
+  airbnb
+
+parser:
+  babel-eslint
+
+settings:
+  ecmascript: 6
+
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+    modules: true
+    classes: true
+    arrowFunctions: true
+    destructuring: true
+
+env:
+  browser: true
+  node: true
+
+plugins:
+  - import
+
+rules:
+  comma-dangle: ["error", {
+    "arrays": "always-multiline",
+    "objects": "always-multiline",
+    "imports": "always-multiline",
+    "exports": "always-multiline",
+    "functions": "never"
+  }]
+  consistent-return: 0
+  max-len: 0
+  import/extensions: 0
+  import/first: 0
+  import/no-unresolved: 0
+  import/no-extraneous-dependencies: 0
+  import/prefer-default-export: 0
+  jsx-a11y/anchor-is-valid: ["error", {
+    "components": ["Link"],
+    "specialLink": ["hrefLeft", "hrefRight", "to"],
+    "aspects": ["noHref", "invalidHref", "preferButton"]
+  }]
+  jsx-a11y/click-events-have-key-events: 0
+  jsx-a11y/label-has-for: 0
+  jsx-a11y/no-noninteractive-element-interactions: 0
+  jsx-a11y/no-static-element-interactions: 0
+  object-curly-newline: ["error", { "consistent": true }]
+  react/forbid-prop-types: 0
+  react/jsx-filename-extension: 0
+  react/no-array-index-key: 0
+  react/no-danger: 0
+  react/prefer-stateless-function: 0
+  react/jsx-no-bind: 0
+  no-unused-expressions: ["error", { "allowShortCircuit": true }]
+  no-plusplus: 0
+  prefer-destructuring: ["error", {
+    "VariableDeclarator": {
+      "array": true,
+      "object": true
+    },
+    "AssignmentExpression": {
+      "array": false,
+      "object": false
+    }
+  }]

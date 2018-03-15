@@ -1,0 +1,14 @@
+
+{
+  "presets": ["react", "env"],
+  "plugins": [
+    "syntax-class-properties",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    ["css-modules-transform", {
+      "generateScopedName": "[name]__[local]--[hash:base64:3]",
+      "extractCss": "./lib/PICRContentEditable.css",
+      "keepImport": true
+    }]
+  ]
+}
